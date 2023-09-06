@@ -28,9 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "utils/mongooseConnect.ts",
     "index.id.ts",
-    "types/mongoose/index.d.ts",
     "tailwind.config.js"
   ],
   "exclude": ["node_modules"]
