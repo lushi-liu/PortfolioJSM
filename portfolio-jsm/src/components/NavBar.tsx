@@ -18,7 +18,7 @@ const NavBar = () => {
         <button
           className={`mr-12 text-14 font-semibold ${
             pathname === "/"
-              ? "text-blue-base dark:text-blue-dark"
+              ? "text-blue-light dark:text-blue-dark"
               : "text-white-500 dark:text-white-800"
           }`}
         >
@@ -27,7 +27,7 @@ const NavBar = () => {
         <button
           className={`mr-12 text-14 font-semibold ${
             pathname === "/casestudies"
-              ? "text-blue-base dark:text-blue-dark"
+              ? "text-blue-light dark:text-blue-dark"
               : "text-white-500 dark:text-white-800"
           }`}
         >
@@ -36,7 +36,7 @@ const NavBar = () => {
         <button
           className={`mr-12 text-14 font-semibold ${
             pathname === "/contact"
-              ? "text-blue-base dark:text-blue-dark"
+              ? "text-blue-light dark:text-blue-dark"
               : "text-white-500 dark:text-white-800"
           }`}
         >
