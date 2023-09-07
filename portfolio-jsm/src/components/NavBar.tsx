@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import useThemeState from "@/src/store/themeStore";
@@ -9,12 +9,18 @@ import { useRouter, usePathname } from "next/navigation";
 const NavBar = () => {
   const pathname = usePathname();
   const { theme, toggleTheme } = useThemeState();
+  const [expanded, setExpanded] = useState(false);
+  const toggleMenu = () => {
+    setExpanded(!expanded);
+  };
+
   return (
-    <nav className="mx-[85px] flex h-[50px] justify-between bg-white-800 dark:bg-black-300">
-      <div className="mt-[36px] flex h-[45px] w-[45px] items-center justify-center rounded-full bg-blue-500 text-18 text-white">
+    <nav className="mx-6 flex justify-between bg-white-800 dark:bg-black-300 md:mx-[85px] md:h-[50px]">
+      <div className="mt-5 flex h-[30px] w-[30px] items-center justify-center rounded-full bg-blue-500 text-18 text-white md:mt-[36px] md:h-[45px] md:w-[45px]">
         L
       </div>
-      <div className="mt-[48px] flex">
+      {/* DESKTOP */}
+      <div className="mt-[48px] hidden md:flex">
         <button
           className={`mr-12 text-14 font-semibold ${
             pathname === "/"
@@ -56,7 +62,7 @@ const NavBar = () => {
             </div>
           </Link>
         </button>
-        <div className="mr-12">|</div>
+        <div className="mr-12 dark:text-white-800">|</div>
         <button onClick={toggleTheme} className="mr-12">
           {theme === "dark" ? (
             <Image src="./moon.svg" alt="" width={20} height={20} />
@@ -65,6 +71,24 @@ const NavBar = () => {
           )}
         </button>
       </div>
+      {/* MOBILE */}
+      <div className="mt-5 md:hidden" onClick={toggleMenu}>
+        <Image
+          src={theme === "dark" ? "./menu-dark.svg" : "./menu-light.svg"}
+          alt=""
+          width={24}
+          height={24}
+        />
+      </div>
+      {expanded && (
+        <div className="fixed left-0 top-0 z-10 h-screen w-screen bg-[#20204080]">
+          <div className="mr-7 mt-4">
+            <button onClick={toggleMenu}>
+              <div className="text-white-900">X</div>
+            </button>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
