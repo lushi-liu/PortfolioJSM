@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google";
 import NavBar from "../components/NavBar";
 import React from "react";
 import ThemeProvider from "@/src/providers/ThemeProvider";
+import Footer from "../components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
           <div className={`bg-white-800 dark:bg-black-300`}>
             <NavBar />
             {children}
+            <Footer />
           </div>
         </ThemeProvider>
       </body>

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import useThemeState from "@/src/store/themeStore";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 // import { useMediaQuery } from "react-responsive";
 
 const NavBar = () => {

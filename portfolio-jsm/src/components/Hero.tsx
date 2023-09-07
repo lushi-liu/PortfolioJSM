@@ -9,8 +9,8 @@ const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
   return (
     <div>
-      <div className="flex flex-col items-center md:flex-row">
-        <div className=" flex flex-col md:mt-16">
+      <div className="ml-6 mt-12 flex flex-col items-center md:ml-16 md:mt-16 md:flex-row">
+        <div className=" flex flex-col ">
           <h3 className=" text-14 font-semibold tracking-[5px] text-blue-light dark:text-blue-dark md:text-20">
             HI, I AM LOUIS
           </h3>
@@ -52,8 +52,13 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="mt-8 flex flex-col items-center md:ml-32 md:mt-0">
-          <Image src="./hero-image.svg" alt="" width={393} height={262} />
+        <div className="mt-8 flex flex-col items-center md:ml-32 md:mt-16">
+          <Image
+            src="./hero-image.svg"
+            alt=""
+            width={isMobile ? 393 : 978}
+            height={isMobile ? 262 : 595}
+          />
         </div>
       </div>
     </div>
