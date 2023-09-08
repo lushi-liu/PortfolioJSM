@@ -52,7 +52,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="mt-8 flex flex-col items-center md:ml-32 md:mt-16">
+        <div className="mt-8 flex flex-col items-center md:mx-32 md:mt-16">
           <Image
             src="./hero-image.svg"
             alt=""
