@@ -20,7 +20,7 @@ const GetInTouch = () => {
             height={isMobile ? "h-[47px]" : "h-[69px]"}
             extraStyles={isMobile ? "text-14" : "text-18"}
             onClick={() => {}}
-            text="Ger in Touch with Me"
+            text="Get in Touch with Me"
           />
         </div>
       </div>
