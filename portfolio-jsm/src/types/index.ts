@@ -22,3 +22,10 @@ export interface InputProps {
   style?: CSSProperties;
   inputColor: string;
 }
+
+export interface ServiceCardProps {
+  im: string;
+  title: string;
+  desc: string;
+  select: boolean;
+}
