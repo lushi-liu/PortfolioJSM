@@ -13,12 +13,20 @@ const ContactForm = () => {
         <div className="order-last ml-10 md:order-first md:ml-24">
           <h3 className="mt-12">My Socials</h3>
           <div className="mt-4 flex flex-row">
-            <div className="mr-4">
+            <a
+              className="mr-4"
+              href="https://www.linkedin.com/in/lushiliu/"
+              target="_blank"
+            >
               <Image src="./linkedin.svg" alt="" width={30} height={30} />
-            </div>
-            <div className="mr-4">
+            </a>
+            <a
+              className="mr-4"
+              href="https://github.com/lushi-liu"
+              target="_blank"
+            >
               <Image src="./github.svg" alt="" width={30} height={30} />
-            </div>
+            </a>
           </div>
           <h3 className="mt-12">Phone Number</h3>
           <div className="mt-4 flex flex-row">
@@ -35,7 +43,7 @@ const ContactForm = () => {
             <h1>lushiliu1@gmail.com</h1>
           </div>
         </div>
-        <div className="mx-8 flex flex-col md:mx-12">
+        <div className="mx-[5%] flex flex-col md:mx-12">
           <h3 className="mt-4 text-18 dark:text-white-900 md:mt-6 md:text-20">
             What is your name?
           </h3>
@@ -45,7 +53,7 @@ const ContactForm = () => {
             onChange={() => {}}
             width={isMobile ? "327px" : "763px"}
             height={isMobile ? "46px" : "56px"}
-            inputColor="bg-white-800 dark:bg-black-300"
+            inputColor="bg-white-800 dark:bg-black-300 border-solid border-[1px] border-[#CCE1FF] dark:border-[#2C3C56]"
           />
           <h3 className="mt-4 text-18 dark:text-white-900 md:mt-6 md:text-20">
             What is your email?
@@ -56,19 +64,18 @@ const ContactForm = () => {
             onChange={() => {}}
             width={isMobile ? "327px" : "763px"}
             height={isMobile ? "46px" : "56px"}
-            inputColor="bg-white-800 dark:bg-black-300"
+            inputColor="bg-white-800 dark:bg-black-300 border-solid border-[1px] border-[#CCE1FF] dark:border-[#2C3C56]"
           />
           <h3 className="mt-4 text-18 dark:text-white-900 md:mt-6 md:text-20">
             Write something about your project goals and timeframe
           </h3>
-          <Input
-            type="String"
+          <textarea
             placeholder=""
             onChange={() => {}}
-            width={isMobile ? "327px" : "763px"}
-            height={isMobile ? "190px" : "190px"}
-            inputColor="bg-white-800 dark:bg-black-300"
-          />
+            className={`${isMobile ? "w-[327px]" : "w-[763px]"} h-[190px] ${
+              isMobile ? "px-4 py-2" : ""
+            } rounded-[10px] border-[1px] border-solid border-[#CCE1FF] bg-white-800 dark:border-[#2C3C56] dark:bg-black-300`}
+          ></textarea>
           <h3 className="mt-4 text-18 dark:text-white-900 md:mt-6 md:text-20">
             How to reach back to you? eg. phone number or email
           </h3>
@@ -79,7 +86,7 @@ const ContactForm = () => {
               onChange={() => {}}
               width={isMobile ? "327px" : "763px"}
               height={isMobile ? "46px" : "56px"}
-              inputColor="bg-white-800 dark:bg-black-300"
+              inputColor="bg-white-800 dark:bg-black-300 border-solid border-[1px] border-[#CCE1FF] dark:border-[#2C3C56]"
             />
           </div>
           <div className="mb-6 flex md:mb-12 md:justify-end">
