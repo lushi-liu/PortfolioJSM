@@ -7,7 +7,7 @@ import { ArrowRight } from "iconsax-react";
 const GetInTouch = () => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
   return (
-    <div className="h-[311px] w-[90%] rounded-[10px] bg-yellow-primary md:h-[330px]">
+    <main className="mt-10 h-[311px] w-[90%] rounded-[10px] bg-yellow-primary md:h-[330px]">
       <div className="flex flex-col justify-between md:flex-row">
         <h1 className=" mt-20 font-bold text-black-200 md:ml-16 md:mt-12 md:w-[520px] md:text-48">
           Have a project in mind that requires technical expertise?
@@ -30,7 +30,7 @@ const GetInTouch = () => {
           />
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

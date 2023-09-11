@@ -29,3 +29,8 @@ export interface ServiceCardProps {
   desc: string;
   select: boolean;
 }
+
+export interface ProjectCardProps {
+  bgcolor: string;
+  title: string;
+}
