@@ -1,3 +1,4 @@
+import Education from "../components/Education";
 import Hero from "../components/Hero";
 import Service from "../components/Service";
 import Skills from "../components/Skills";
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <Service />
+      <Education />
     </main>
   );
 }

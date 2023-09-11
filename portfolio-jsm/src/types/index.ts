@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { CSSProperties, ChangeEvent, ReactNode } from "react";
 
 export interface ButtonProps {
   text: string | ReactNode;
@@ -11,4 +11,21 @@ export interface ButtonProps {
   height: string;
   extraStyles?: string;
   name?: string;
+}
+
+export interface InputProps {
+  type: string;
+  placeholder: string;
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  width?: string;
+  height?: string;
+  style?: CSSProperties;
+  inputColor: string;
+}
+
+export interface ServiceCardProps {
+  im: string;
+  title: string;
+  desc: string;
+  select: boolean;
 }

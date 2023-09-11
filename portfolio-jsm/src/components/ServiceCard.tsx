@@ -1,11 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import { ServiceCardProps } from "../types";
 
-const ServiceCard = () => {
-  const im = "./arrow.svg";
-  const title = "Front-End Dev";
-  const desc =
-    "Front-end dev includes creating the user interface and interactive elements of websites and apps.";
+const ServiceCard = ({ im, title, desc }: ServiceCardProps) => {
   // const select = true
   return (
     <div className="flex h-[265px] w-[287px] flex-col rounded-[15px] bg-white-900 shadow-lg dark:bg-black-200">
