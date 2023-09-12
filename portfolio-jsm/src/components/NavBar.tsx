@@ -92,8 +92,8 @@ const NavBar = () => {
       </div>
       {expanded && (
         <div className="fixed left-0 top-0 z-10 h-screen w-screen bg-[#20204080]">
-          <div className="m-10 flex h-1/2 flex-col gap-5 rounded-[40px] bg-white-800 opacity-100 dark:bg-black-200">
-            <button onClick={toggleMenu} className="ml-[82%] mt-[10%]">
+          <div className="m-10 flex h-1/4 w-[70%] flex-col items-center gap-2 rounded-[40px] bg-white-800 opacity-100 dark:bg-black-200">
+            <button onClick={toggleMenu} className="ml-[65%] ">
               <div className="text-24 font-extrabold dark:text-white-900">
                 X
               </div>
