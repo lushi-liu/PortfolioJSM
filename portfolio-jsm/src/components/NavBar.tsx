@@ -75,11 +75,12 @@ const NavBar = () => {
       {/* MOBILE */}
       <div className="mt-5 flex flex-row md:hidden">
         <button onClick={toggleTheme} className="mr-4">
-          {theme === "dark" ? (
-            <Image src="./moon.svg" alt="" width={20} height={20} />
-          ) : (
-            <Image src="./sun.svg" alt="" width={20} height={20} />
-          )}
+          <Image
+            src={theme === "dark" ? "./moon.svg" : "./sun.svg"}
+            alt=""
+            width={20}
+            height={20}
+          />
         </button>
         <div onClick={toggleMenu}>
           <Image

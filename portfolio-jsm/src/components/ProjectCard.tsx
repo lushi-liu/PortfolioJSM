@@ -1,11 +1,12 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 import Button from "./Button";
 import { ArrowRight } from "iconsax-react";
 import { ProjectCardProps } from "../types";
 
-const ProjectCard = ({ bgcolor, title }: ProjectCardProps) => {
+const ProjectCard = ({ bgcolor, title, lImage, mImage }: ProjectCardProps) => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
 
   return (
@@ -13,7 +14,7 @@ const ProjectCard = ({ bgcolor, title }: ProjectCardProps) => {
       className={`${bgcolor} h-[514px] w-[90%] rounded-[10px] text-white-900 md:h-[440px] md:w-[1270px]`}
     >
       <div className="flex flex-col md:flex-row">
-        <div className="ml-6 mt-12 flex flex-col md:ml-24 md:mt-20 md:w-[50%]">
+        <div className="ml-6 mt-12 flex flex-col md:ml-24 md:mt-20 md:w-[35%]">
           <h1 className="text-32 font-extrabold md:text-48">{title}</h1>
           <div className="mt-3 flex flex-row">
             <Button
@@ -40,7 +41,10 @@ const ProjectCard = ({ bgcolor, title }: ProjectCardProps) => {
             <ArrowRight className="ml-3 inline" />
           </div>
         </div>
-        <div>INSERT IMAGE HERE</div>
+        <div className="mt-9 flex flex-row md:mt-16">
+          <Image src={lImage} alt="" width={575} height={330} />
+          <Image src={mImage} alt="" width={140} height={279} />
+        </div>
       </div>
     </main>
   );

@@ -33,4 +33,12 @@ export interface ServiceCardProps {
 export interface ProjectCardProps {
   bgcolor: string;
   title: string;
+  lImage: string;
+  mImage: string;
+}
+
+export interface CaseCardProps {
+  bgcolor: string;
+  title: string;
+  desc: string;
 }

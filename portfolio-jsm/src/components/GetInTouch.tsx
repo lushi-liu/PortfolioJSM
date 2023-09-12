@@ -3,6 +3,7 @@ import React from "react";
 import Button from "./Button";
 import { useMediaQuery } from "react-responsive";
 import { ArrowRight } from "iconsax-react";
+import Link from "next/link";
 
 const GetInTouch = () => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
@@ -12,7 +13,7 @@ const GetInTouch = () => {
         <h1 className=" mt-20 font-bold text-black-200 md:ml-16 md:mt-12 md:w-[520px] md:text-48">
           Have a project in mind that requires technical expertise?
         </h1>
-        <div className="mt-2 md:mr-16 md:mt-44">
+        <Link href="/contact" className="mt-2 md:mr-16 md:mt-44">
           <Button
             buttonColor="bg-blue-light dark:bg-blue-dark rounded-[9000px] py-2"
             textColor="text-white-900 font-semibold"
@@ -28,7 +29,7 @@ const GetInTouch = () => {
               </>
             }
           />
-        </div>
+        </Link>
       </div>
     </main>
   );

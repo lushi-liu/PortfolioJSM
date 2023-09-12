@@ -3,6 +3,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import { ArrowRight } from "iconsax-react";
 import Button from "./Button";
+import Link from "next/link";
 
 const FeaturedProjects = () => {
   return (
@@ -15,17 +16,23 @@ const FeaturedProjects = () => {
           <ProjectCard
             bgcolor="bg-[#416CEA]"
             title="Morrent - A Car Rental Application"
+            lImage="./job-image/Morrent-Laptop.svg"
+            mImage="./job-image/Morrent-Mobile.svg"
           />
           <ProjectCard
             bgcolor="bg-[#0BAB7C]"
             title="JobIT - A Job Finding Application"
+            lImage="./job-image/JobIT-Laptop.svg"
+            mImage="./job-image/JobIT-Mobile.svg"
           />
           <ProjectCard
             bgcolor="bg-[#FF6934]"
             title="Morrent - A Car Rental Application"
+            lImage="./job-image/Morrent-Laptop.svg"
+            mImage="./job-image/Morrent-Mobile.svg"
           />
         </div>
-        <div className="hidden md:mt-10 md:flex">
+        <Link href="/casestudies" className="hidden md:mt-10 md:flex">
           <Button
             buttonColor="bg-blue-light dark:bg-blue-dark rounded-[9000px] py-2"
             textColor="text-white-900 font-semibold"
@@ -33,7 +40,6 @@ const FeaturedProjects = () => {
             width={"w-[323px]"}
             height={"h-[69px]"}
             extraStyles={"text-18"}
-            onClick={() => {}}
             text={
               <>
                 See more case studies
@@ -41,7 +47,7 @@ const FeaturedProjects = () => {
               </>
             }
           />
-        </div>
+        </Link>
       </div>
     </div>
   );
