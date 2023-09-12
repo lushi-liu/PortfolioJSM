@@ -7,8 +7,8 @@ export interface ButtonProps {
   textColor: string;
   hPadding?: string;
   hMargin?: string;
-  width: string;
-  height: string;
+  width?: string;
+  height?: string;
   extraStyles?: string;
   name?: string;
 }
@@ -28,4 +28,17 @@ export interface ServiceCardProps {
   title: string;
   desc: string;
   select: boolean;
+}
+
+export interface ProjectCardProps {
+  bgcolor: string;
+  title: string;
+  lImage: string;
+  mImage: string;
+}
+
+export interface CaseCardProps {
+  bgcolor: string;
+  title: string;
+  desc: string;
 }

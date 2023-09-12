@@ -7,9 +7,22 @@ import { Copy } from "iconsax-react";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
+
+  const copyText = () => {
+    navigator.clipboard
+      .writeText("lushiliu1@gmail.com")
+      .then(() => {
+        console.log("Text copied to clipboard");
+        // You can add any additional logic or feedback here
+      })
+      .catch((err) => {
+        console.error("Failed to copy text: ", err);
+        // Handle any errors here
+      });
+  };
   return (
     <div>
-      <div className="ml-6 mt-12 flex flex-col items-center md:ml-16 md:mt-16 md:flex-row">
+      <div className="mx-[5%] mt-12 flex flex-col items-center md:ml-16 md:mt-16 md:flex-row">
         <div className=" flex flex-col ">
           <h3 className=" text-14 font-semibold tracking-[5px] text-blue-light dark:text-blue-dark md:text-20">
             HI, I AM LOUIS
@@ -23,16 +36,19 @@ const Hero = () => {
             profound commitment to excellence
           </h3>
           <div className="mt-10 flex flex-col md:flex-row">
-            <Button
-              buttonColor="bg-blue-light dark:bg-blue-dark rounded-[9000px] py-2"
-              textColor="text-white-900 font-semibold"
-              hPadding="px-4"
-              width={isMobile ? "w-[345px]" : "w-[186px]"}
-              height={isMobile ? "h-[47px]" : "h-[69px]"}
-              extraStyles={isMobile ? "text-14" : "text-18"}
-              onClick={() => {}}
-              text="My Work"
-            />
+            <a href="/casestudies">
+              <Button
+                buttonColor="bg-blue-light dark:bg-blue-dark rounded-[9000px] py-2"
+                textColor="text-white-900 font-semibold"
+                hPadding="px-4"
+                width={isMobile ? "w-[345px]" : "w-[186px]"}
+                height={isMobile ? "h-[47px]" : "h-[69px]"}
+                extraStyles={isMobile ? "text-14" : "text-18"}
+                onClick={() => {}}
+                text="My Work"
+              />
+            </a>
+
             <div className="mt-4 md:ml-8 md:mt-0">
               <Button
                 buttonColor="bg-white-900 dark:bg-black-200 rounded-[9000px] py-2"
@@ -41,7 +57,7 @@ const Hero = () => {
                 width={isMobile ? "w-[345px]" : "w-[297px]"}
                 height={isMobile ? "h-[47px]" : "h-[69px]"}
                 extraStyles={isMobile ? "text-14" : "text-18"}
-                onClick={() => {}}
+                onClick={copyText}
                 text={
                   <>
                     lushiliu1@gmail.com

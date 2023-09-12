@@ -64,27 +64,84 @@ const NavBar = () => {
         </button>
         <div className="mr-12 dark:text-white-800">|</div>
         <button onClick={toggleTheme} className="mr-12">
-          {theme === "dark" ? (
-            <Image src="./moon.svg" alt="" width={20} height={20} />
-          ) : (
-            <Image src="./sun.svg" alt="" width={20} height={20} />
-          )}
+          <Image
+            src={theme === "dark" ? "./moon.svg" : "./sun.svg"}
+            alt=""
+            width={20}
+            height={20}
+          />
         </button>
       </div>
       {/* MOBILE */}
-      <div className="mt-5 md:hidden" onClick={toggleMenu}>
-        <Image
-          src={theme === "dark" ? "./menu-dark.svg" : "./menu-light.svg"}
-          alt=""
-          width={24}
-          height={24}
-        />
+      <div className="mt-5 flex flex-row md:hidden">
+        <button onClick={toggleTheme} className="mr-4">
+          <Image
+            src={theme === "dark" ? "./moon.svg" : "./sun.svg"}
+            alt=""
+            width={20}
+            height={20}
+          />
+        </button>
+        <div onClick={toggleMenu}>
+          <Image
+            src={theme === "dark" ? "./menu-dark.svg" : "./menu-light.svg"}
+            alt=""
+            width={24}
+            height={24}
+          />
+        </div>
       </div>
       {expanded && (
         <div className="fixed left-0 top-0 z-10 h-screen w-screen bg-[#20204080]">
-          <div className="mr-7 mt-4">
-            <button onClick={toggleMenu}>
-              <div className="text-white-900">X</div>
+          <div className="m-10 flex h-1/4 w-[70%] flex-col items-center gap-2 rounded-[40px] bg-white-800 opacity-100 dark:bg-black-200">
+            <button onClick={toggleMenu} className="ml-[65%] ">
+              <div className="text-24 font-extrabold dark:text-white-900">
+                X
+              </div>
+            </button>
+            <button
+              onClick={toggleMenu}
+              className={`mx-[30%] text-14 font-semibold ${
+                pathname === "/"
+                  ? "text-blue-light dark:text-blue-dark"
+                  : "text-white-500 dark:text-white-800"
+              }`}
+            >
+              <Link href="/">Home</Link>
+            </button>
+            <button
+              onClick={toggleMenu}
+              className={`mx-[30%] text-14 font-semibold ${
+                pathname === "/casestudies"
+                  ? "text-blue-light dark:text-blue-dark"
+                  : "text-white-500 dark:text-white-800"
+              }`}
+            >
+              <Link href="/casestudies">Case Studies</Link>
+            </button>
+            <button
+              onClick={toggleMenu}
+              className={`mx-[30%] text-14 font-semibold ${
+                pathname === "/contact"
+                  ? "text-blue-light dark:text-blue-dark"
+                  : "text-white-500 dark:text-white-800"
+              }`}
+            >
+              <Link href="/contact">Contact</Link>
+            </button>
+
+            <button className="mx-[35%] text-14 font-semibold text-black-200 dark:text-white-800">
+              <div className="flex flex-row">
+                <Image
+                  src={
+                    theme === "dark" ? "./downloaddark.svg" : "./download.svg"
+                  }
+                  alt=""
+                  width={20}
+                  height={20}
+                />
+                <span className="ml-2">Resume</span>
+              </div>
             </button>
           </div>
         </div>
