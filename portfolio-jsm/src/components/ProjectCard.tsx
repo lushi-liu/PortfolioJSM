@@ -20,8 +20,6 @@ const ProjectCard = ({ bgcolor, title }: ProjectCardProps) => {
               buttonColor="bg-[#FFFFFF33] rounded-[6px] py-3"
               textColor="text-white-900 font-semibold"
               hPadding="px-3"
-              width={""}
-              height={""}
               extraStyles={"text-14 font-light"}
               onClick={() => {}}
               text="React.JS, Next.js"
@@ -31,8 +29,6 @@ const ProjectCard = ({ bgcolor, title }: ProjectCardProps) => {
                 buttonColor="bg-[#FFFFFF33] rounded-[6px] py-3"
                 textColor="text-white-900 font-semibold"
                 hPadding="px-3"
-                width={""}
-                height={""}
                 extraStyles={"text-14"}
                 onClick={() => {}}
                 text="Nodejs, MongoDB"

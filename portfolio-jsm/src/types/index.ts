@@ -7,8 +7,8 @@ export interface ButtonProps {
   textColor: string;
   hPadding?: string;
   hMargin?: string;
-  width: string;
-  height: string;
+  width?: string;
+  height?: string;
   extraStyles?: string;
   name?: string;
 }

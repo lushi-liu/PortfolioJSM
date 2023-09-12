@@ -19,13 +19,6 @@ const Input = ({
   return (
     <input
       type={type}
-      onClick={
-        type === "Time"
-          ? (e) => {
-              e.currentTarget.showPicker();
-            }
-          : undefined
-      }
       placeholder={placeholder}
       className={`block rounded-[10px] ${inputColor} px-4 py-2`}
       style={inputStyle}

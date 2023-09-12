@@ -64,11 +64,12 @@ const NavBar = () => {
         </button>
         <div className="mr-12 dark:text-white-800">|</div>
         <button onClick={toggleTheme} className="mr-12">
-          {theme === "dark" ? (
-            <Image src="./moon.svg" alt="" width={20} height={20} />
-          ) : (
-            <Image src="./sun.svg" alt="" width={20} height={20} />
-          )}
+          <Image
+            src={theme === "dark" ? "./moon.svg" : "./sun.svg"}
+            alt=""
+            width={20}
+            height={20}
+          />
         </button>
       </div>
       {/* MOBILE */}
