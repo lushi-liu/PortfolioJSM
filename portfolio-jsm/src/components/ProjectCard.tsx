@@ -42,8 +42,20 @@ const ProjectCard = ({ bgcolor, title, lImage, mImage }: ProjectCardProps) => {
           </div>
         </div>
         <div className="mt-9 flex flex-row md:mt-16">
-          <Image src={lImage} alt="" width={575} height={330} />
-          <Image src={mImage} alt="" width={140} height={279} />
+          <Image
+            src={lImage}
+            alt=""
+            width={isMobile ? 270 : 575}
+            height={isMobile ? 155 : 330}
+          />
+          <div className="ml-[-20px]">
+            <Image
+              src={mImage}
+              alt=""
+              width={isMobile ? 67 : 140}
+              height={isMobile ? 131 : 279}
+            />
+          </div>
         </div>
       </div>
     </main>

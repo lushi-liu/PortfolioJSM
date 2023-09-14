@@ -41,4 +41,12 @@ export interface CaseCardProps {
   bgcolor: string;
   title: string;
   desc: string;
+  image: string;
+}
+
+export interface ReviewProps {
+  name: string;
+  title: string;
+  desc: string;
+  image: string;
 }

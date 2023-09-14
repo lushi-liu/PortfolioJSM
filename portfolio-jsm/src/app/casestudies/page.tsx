@@ -17,11 +17,13 @@ export default function Casestudies() {
             bgcolor="bg-blue-dark"
             title="Morrent"
             desc="Car Rental Application"
+            image="./job-image/Morrent-Laptop.svg"
           />
           <CaseCard
             bgcolor="bg-[#0BAB7C]"
             title="JobIt"
             desc="Job Finding Application"
+            image="./job-image/JobIT-Laptop.svg"
           />
         </li>
         <li className="flex flex-col gap-4 md:flex-row">
@@ -29,11 +31,13 @@ export default function Casestudies() {
             bgcolor="bg-blue-dark"
             title="Morrent"
             desc="Car Rental Application"
+            image="./job-image/Morrent-Laptop.svg"
           />
           <CaseCard
             bgcolor="bg-blue-dark"
             title="Morrent"
             desc="Car Rental Application"
+            image="./job-image/Morrent-Laptop.svg"
           />
         </li>
       </ul>
