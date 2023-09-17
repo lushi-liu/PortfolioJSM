@@ -9,6 +9,7 @@ const Input = ({
   height,
   style,
   inputColor,
+  name,
 }: InputProps) => {
   const inputStyle: CSSProperties = {
     width: width || "100%",
@@ -23,6 +24,7 @@ const Input = ({
       className={`block rounded-[10px] ${inputColor} px-4 py-2`}
       style={inputStyle}
       onChange={onChange}
+      name={name}
     />
   );
 };

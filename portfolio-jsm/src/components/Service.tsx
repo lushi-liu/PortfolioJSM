@@ -5,7 +5,7 @@ const Service = () => {
   return (
     <div className="flex flex-col items-center">
       <h2 className="mt-8 text-center text-[36px] font-bold md:mt-16 md:text-48">
-        What service do I provide
+        What <span className="magicHighlight">service</span> do I provide
       </h2>
       <div className="mt-24 flex flex-col justify-center md:flex-row">
         <div className="mx-3 mb-6">

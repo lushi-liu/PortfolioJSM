@@ -21,6 +21,7 @@ export interface InputProps {
   height?: string;
   style?: CSSProperties;
   inputColor: string;
+  name?: string;
 }
 
 export interface ServiceCardProps {
@@ -35,6 +36,8 @@ export interface ProjectCardProps {
   title: string;
   lImage: string;
   mImage: string;
+  leftSide: boolean;
+  link: string;
 }
 
 export interface CaseCardProps {
@@ -42,6 +45,7 @@ export interface CaseCardProps {
   title: string;
   desc: string;
   image: string;
+  link: string;
 }
 
 export interface ReviewProps {

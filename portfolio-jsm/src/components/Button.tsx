@@ -18,7 +18,7 @@ const Button = ({
       name={name}
       className={`${buttonColor} ${textColor} ${hPadding} ${hMargin} ${width} ${height} ${extraStyles}`}
       onClick={onClick}
-      type="button"
+      type={"button"}
     >
       {text}
     </button>
