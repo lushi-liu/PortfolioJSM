@@ -16,11 +16,12 @@ export interface ButtonProps {
 export interface InputProps {
   type: string;
   placeholder: string;
-  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
   width?: string;
   height?: string;
   style?: CSSProperties;
   inputColor: string;
+  name?: string;
 }
 
 export interface ServiceCardProps {
@@ -35,10 +36,21 @@ export interface ProjectCardProps {
   title: string;
   lImage: string;
   mImage: string;
+  leftSide: boolean;
+  link: string;
 }
 
 export interface CaseCardProps {
   bgcolor: string;
   title: string;
   desc: string;
+  image: string;
+  link: string;
+}
+
+export interface ReviewProps {
+  name: string;
+  title: string;
+  desc: string;
+  image: string;
 }

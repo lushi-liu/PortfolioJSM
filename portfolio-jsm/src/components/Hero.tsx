@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "./Button";
 import { useMediaQuery } from "react-responsive";
 import { Copy } from "iconsax-react";
+import Link from "next/link";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
@@ -28,7 +29,8 @@ const Hero = () => {
             HI, I AM LOUIS
           </h3>
           <h1 className="mt-8 text-[38px] font-bold dark:text-white-900 md:mt-[45px] md:text-64">
-            Professional Web Developer based in Canada
+            Professional <span className="magicHighlight">Web</span>{" "}
+            <span className="magicHighlight">Developer</span> based in Canada
           </h1>
           <h3 className="mt-[10px] text-[12px] text-white-500 dark:text-white-800 md:text-18">
             Transforming the web one line of code at a time: Crafting
@@ -36,7 +38,7 @@ const Hero = () => {
             profound commitment to excellence
           </h3>
           <div className="mt-10 flex flex-col md:flex-row">
-            <a href="/casestudies">
+            <Link href="/casestudies">
               <Button
                 buttonColor="bg-blue-light dark:bg-blue-dark rounded-[9000px] py-2"
                 textColor="text-white-900 font-semibold"
@@ -47,8 +49,7 @@ const Hero = () => {
                 onClick={() => {}}
                 text="My Work"
               />
-            </a>
-
+            </Link>
             <div className="mt-4 md:ml-8 md:mt-0">
               <Button
                 buttonColor="bg-white-900 dark:bg-black-200 rounded-[9000px] py-2"
