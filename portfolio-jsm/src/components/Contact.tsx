@@ -91,7 +91,6 @@ const ContactForm = () => {
               type="text"
               name="user_name"
               placeholder=""
-              onChange={() => {}}
               width={isMobile ? "327px" : "763px"}
               height={isMobile ? "46px" : "56px"}
               inputColor="bg-white-800 dark:bg-black-300 border-solid border-[1px] border-[#CCE1FF] dark:border-[#2C3C56]"
@@ -103,7 +102,6 @@ const ContactForm = () => {
               type="email"
               name="user_email"
               placeholder=""
-              onChange={() => {}}
               width={isMobile ? "327px" : "763px"}
               height={isMobile ? "46px" : "56px"}
               inputColor="bg-white-800 dark:bg-black-300 border-solid border-[1px] border-[#CCE1FF] dark:border-[#2C3C56]"
@@ -114,10 +112,9 @@ const ContactForm = () => {
             <textarea
               placeholder=""
               name="message"
-              onChange={() => {}}
-              className={`${isMobile ? "w-[327px]" : "w-[763px]"} h-[190px] ${
-                isMobile ? "px-4 py-2" : ""
-              } rounded-[10px] border-[1px] border-solid border-[#CCE1FF] bg-white-800 dark:border-[#2C3C56] dark:bg-black-300`}
+              className={`${
+                isMobile ? "w-[327px] px-4 py-2" : "w-[763px]"
+              } h-[190px] rounded-[10px] border-[1px] border-solid border-[#CCE1FF] bg-white-800 dark:border-[#2C3C56] dark:bg-black-300`}
             ></textarea>
             <h3 className="mt-4 text-18 dark:text-white-900 md:mt-6 md:text-20">
               How to reach back to you? eg. phone number or email
@@ -127,7 +124,6 @@ const ContactForm = () => {
                 type="text"
                 name="method"
                 placeholder=""
-                onChange={() => {}}
                 width={isMobile ? "327px" : "763px"}
                 height={isMobile ? "46px" : "56px"}
                 inputColor="bg-white-800 dark:bg-black-300 border-solid border-[1px] border-[#CCE1FF] dark:border-[#2C3C56]"

@@ -16,7 +16,7 @@ export interface ButtonProps {
 export interface InputProps {
   type: string;
   placeholder: string;
-  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
   width?: string;
   height?: string;
   style?: CSSProperties;
