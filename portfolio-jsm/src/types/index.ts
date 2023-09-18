@@ -57,8 +57,15 @@ export interface ReviewProps {
 
 export interface ProjectTitleProps {
   title: string;
+  desc: string;
   lImage: string;
   mImage: string;
   demo: string;
   code: string;
+}
+
+export interface ProjectDescProps {
+  desc: string;
+  problem: string;
+  image: string;
 }

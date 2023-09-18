@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 const Skills = () => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
   const iS = isMobile ? 25 : 50; // icon size
-  // const iS = 50;
+
   return (
     <main className="mt-8 w-full bg-white-900 dark:bg-black-200 md:mt-16">
       <div className="flex w-full flex-col items-center text-black-400 md:h-[100%] md:w-[100%]">

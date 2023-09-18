@@ -25,14 +25,14 @@ const ProjectTitle = ({
       </h1>
       <div className="mt-9 flex flex-row md:mt-16">
         <Image
-          src="./job-image/Morrent-Laptop.svg"
+          src={lImage}
           alt=""
           width={isMobile ? 270 : 575}
           height={isMobile ? 155 : 330}
         />
         <div className="ml-[-20px]">
           <Image
-            src="./job-image/Morrent-Mobile.svg"
+            src={mImage}
             alt=""
             width={isMobile ? 67 : 140}
             height={isMobile ? 131 : 279}
@@ -46,8 +46,8 @@ const ProjectTitle = ({
           target="_blank"
         >
           <Globe />
-          <span className="ml-2">Demo Site</span>
-          <ArrowRight className="ml-3 inline" />
+          <span className="ml-1 text-14 md:ml-2 md:text-20">Demo Site</span>
+          <ArrowRight className="ml-1 inline md:ml-3" />
         </a>
         <a
           className="mx-6 mr-4 flex flex-row text-blue-light dark:text-blue-dark md:mx-20"
@@ -55,8 +55,8 @@ const ProjectTitle = ({
           target="_blank"
         >
           <GithubBlue />
-          <span className="ml-2">Source Code</span>
-          <ArrowRight className="ml-3 inline" />
+          <span className="ml-1 text-14 md:ml-2 md:text-20">Source Code</span>
+          <ArrowRight className="ml-1 inline md:ml-3" />
         </a>
       </div>
     </main>
