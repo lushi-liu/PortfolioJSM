@@ -1,11 +1,15 @@
+import ProjectTitle from "@/src/components/ProjectTitle";
 import React from "react";
 
-const page = () => {
+export default function Morrent() {
   return (
-    <main className="flex min-h-screen flex-col items-center text-center dark:text-white-800 md:p-24">
-      MORRENT
-    </main>
+    <ProjectTitle
+      title="Morrent"
+      desc="A Car Rental Website"
+      lImage="./job-image/Morrent-Laptop.svg"
+      mImage="./job-image/Morrent-Mobile.svg"
+      demo="https://cohort5-breaking-bugs-car-rent.vercel.app/"
+      code="https://github.com/JavaScript-Mastery-PRO/Cohort5_BreakingBugs_CarRent"
+    />
   );
-};
-
-export default page;
+}

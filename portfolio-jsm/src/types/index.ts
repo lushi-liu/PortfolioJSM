@@ -54,3 +54,11 @@ export interface ReviewProps {
   desc: string;
   image: string;
 }
+
+export interface ProjectTitleProps {
+  title: string;
+  lImage: string;
+  mImage: string;
+  demo: string;
+  code: string;
+}
