@@ -65,7 +65,7 @@ export interface ProjectTitleProps {
 }
 
 export interface ProjectDescProps {
-  desc: string;
+  desc: React.JSX.Element;
   problem: string;
   image: string;
 }

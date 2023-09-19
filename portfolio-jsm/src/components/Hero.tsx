@@ -29,7 +29,7 @@ const Hero = () => {
             HI, I AM LOUIS
           </h3>
           <h1 className="mt-8 text-[38px] font-bold dark:text-white-900 md:mt-[45px] md:text-64">
-            Professional <span className="magicHighlight">Web</span>{" "}
+            Professional <span className="magicHighlight">Web </span>
             <span className="magicHighlight">Developer</span> based in Canada
           </h1>
           <h3 className="mt-[10px] text-[12px] text-white-500 dark:text-white-800 md:text-18">

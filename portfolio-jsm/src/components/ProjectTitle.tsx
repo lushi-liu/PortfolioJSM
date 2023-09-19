@@ -16,7 +16,7 @@ const ProjectTitle = ({
 }: ProjectTitleProps) => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
   return (
-    <main className="flex min-h-screen flex-col items-center text-center font-bold dark:text-white-800 md:p-24">
+    <main className="flex flex-col items-center text-center font-bold dark:text-white-800 md:p-24">
       <h1 className="mt-10 text-14 text-blue-light dark:text-blue-dark md:text-20">
         WEB DEV PROJECT
       </h1>
@@ -39,13 +39,15 @@ const ProjectTitle = ({
           />
         </div>
       </div>
-      <div className="flex flex-row">
+      <div className="my-12 flex flex-row md:mb-0 md:mt-24">
         <a
           className="mx-6 mr-4 flex flex-row text-blue-light dark:text-blue-dark md:mx-20"
           href={demo}
           target="_blank"
         >
-          <Globe />
+          <div className="mt-0.5 md:mt-1.5">
+            <Globe />
+          </div>
           <span className="ml-1 text-14 md:ml-2 md:text-20">Demo Site</span>
           <ArrowRight className="ml-1 inline md:ml-3" />
         </a>
@@ -54,7 +56,9 @@ const ProjectTitle = ({
           href={code}
           target="_blank"
         >
-          <GithubBlue />
+          <div className="mt-0.5 md:mt-1.5">
+            <GithubBlue />
+          </div>
           <span className="ml-1 text-14 md:ml-2 md:text-20">Source Code</span>
           <ArrowRight className="ml-1 inline md:ml-3" />
         </a>

@@ -7,7 +7,7 @@ const ProjectRole = () => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
   return (
     <main className="mt-4 w-full bg-white-900 dark:bg-black-200 md:mt-6">
-      <ul className="ml-3 flex flex-col md:ml-0 md:flex-row md:items-center md:justify-between">
+      <ul className="ml-4 flex flex-col md:ml-0 md:flex-row md:items-center md:justify-between">
         <li className="mt-5 flex flex-col md:ml-[20%]">
           <h3 className="mt-6 text-14 font-semibold text-black-400 dark:text-white-500 md:mt-12 md:text-[16px]">
             My Role
