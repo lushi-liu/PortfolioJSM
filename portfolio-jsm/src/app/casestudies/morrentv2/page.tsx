@@ -1,4 +1,7 @@
+import GetInTouch from "@/src/components/GetInTouch";
 import ProjectDesc from "@/src/components/ProjectDesc";
+import ProjectOther from "@/src/components/ProjectOther";
+import ProjectProblem from "@/src/components/ProjectProblem";
 import ProjectProcess from "@/src/components/ProjectProcess";
 import ProjectRole from "@/src/components/ProjectRole";
 import ProjectTitle from "@/src/components/ProjectTitle";
@@ -6,10 +9,10 @@ import React from "react";
 
 export default function Morrent() {
   return (
-    <>
+    <main className="flex min-h-screen flex-col items-center justify-between py-6 dark:text-white-800">
       <ProjectTitle
         title="Morrent"
-        desc="A Car Rental Website"
+        titleDesc="A Car Rental Website"
         lImage="/job-image/Morrent-Laptop.svg"
         mImage="/job-image/Morrent-Mobile.svg"
         demo="https://cohort5-breaking-bugs-car-rent.vercel.app/"
@@ -49,6 +52,9 @@ export default function Morrent() {
         figma="/job-image/Morrent-Figma.svg"
       />
       <ProjectProcess />
-    </>
+      <ProjectProblem />
+      <ProjectOther />
+      <GetInTouch />
+    </main>
   );
 }

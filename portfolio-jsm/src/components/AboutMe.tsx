@@ -26,20 +26,21 @@ const AboutMe = () => {
           {currCard === 1 ? (
             <ReviewCard
               image="./sun.svg"
-              name="Louis Liu"
+              name="Adrian Hajdin"
               title="Founder & CEO at JS Mastery"
-              desc="I have had the pleasure of working with Adrian as a Software Developer and can confidently 
+              desc="I have had the pleasure of working with Lushi as a Software Developer and can confidently 
           say that he is a valuable asset to any team. He is highly skilled in ReactJS, NextJS, Javascript, 
           Material UI, Tailwind CSS, Redux, and GitHub, and consistently delivers high-quality code. "
             />
           ) : currCard === 2 ? (
             <ReviewCard
               image="./moon.svg"
-              name="Louis Liu"
+              name="Brandon Etter"
               title="Founder & CEO at JS Mastery"
-              desc="I have had the pleasure of working with Adrian as a Software Developer and can confidently 
-        say that he is a valuable asset to any team. He is highly skilled in ReactJS, NextJS, Javascript, 
-        Material UI, Tailwind CSS, Redux, and GitHub, and consistently delivers high-quality code. "
+              desc="I had the pleasure of working alongside Louis on multiple projects. During that time I was always 
+              impressed by his ability to be self sufficient in all of his tasks while creating quality work. He excelled 
+              in creating not just readable and clean code, but quality design of components and user interfaces. I 
+              wouldn't hesitate to work with him again in any capacity!"
             />
           ) : (
             <ReviewCard

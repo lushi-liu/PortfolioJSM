@@ -2,8 +2,9 @@
 import React from "react";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
+import { ProjectRoleProps } from "../types";
 
-const ProjectRole = () => {
+const ProjectRole = ({ myRole, start, end }: ProjectRoleProps) => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
   return (
     <main className="mt-4 w-full bg-white-900 dark:bg-black-200 md:mt-6">
@@ -13,7 +14,7 @@ const ProjectRole = () => {
             My Role
           </h3>
           <h3 className="mt-3 text-20 font-semibold dark:text-white-900 md:text-24">
-            Software Engineer
+            {myRole}
           </h3>
         </li>
         <li className="mt-5 flex flex-col">
@@ -21,7 +22,7 @@ const ProjectRole = () => {
             Start Date
           </h3>
           <h3 className="mt-3 text-20 font-semibold dark:text-white-900 md:text-24">
-            24/01/2023
+            {start}
           </h3>
         </li>
         <li className="mt-5 flex flex-col md:mr-[20%]">
@@ -29,7 +30,7 @@ const ProjectRole = () => {
             End Date
           </h3>
           <h3 className="mt-3 text-20 font-semibold dark:text-white-900 md:text-24">
-            02/03/2023
+            {end}
           </h3>
         </li>
       </ul>

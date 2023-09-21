@@ -8,7 +8,7 @@ import { GithubBlue, Globe } from "./Icons";
 
 const ProjectTitle = ({
   title,
-  desc,
+  titleDesc,
   lImage,
   mImage,
   demo,
@@ -21,7 +21,7 @@ const ProjectTitle = ({
         WEB DEV PROJECT
       </h1>
       <h1 className="mt-3 text-[42px] md:mt-6 md:text-64">
-        <span className="magicHighlight">{title}</span> - {desc}
+        <span className="magicHighlight">{title}</span> - {titleDesc}
       </h1>
       <div className="mt-9 flex flex-row md:mt-16">
         <Image

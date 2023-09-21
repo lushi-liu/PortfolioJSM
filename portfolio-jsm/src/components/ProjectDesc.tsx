@@ -9,7 +9,11 @@ const ProjectDesc = ({ desc, problem, image, figma }: ProjectDescProps) => {
   return (
     <main className="flex min-h-screen flex-col items-center font-bold dark:text-white-800">
       <h3 className="mx-3 my-6 whitespace-pre-line text-14 text-white-500 dark:text-white-800 md:mx-[20%] md:my-[5%] md:text-20">
-        {desc}
+        {desc.map((text, index) => (
+          <p key={index} className="mb-4 md:mb-5 ">
+            {text}
+          </p>
+        ))}
       </h3>
       <div className="bg-white-900 dark:bg-black-200">
         <div className="mx-4 mt-8 flex flex-col justify-start md:mx-[20%] md:mt-24">
