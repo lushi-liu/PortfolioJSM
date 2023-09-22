@@ -8,7 +8,7 @@ const ProjectDesc = ({ desc, problem, image, figma }: ProjectDescProps) => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
   return (
     <main className="flex min-h-screen flex-col items-center font-bold dark:text-white-800">
-      <h3 className="mx-3 my-6 whitespace-pre-line text-14 text-white-500 dark:text-white-800 md:mx-[20%] md:my-[5%] md:text-20">
+      <h3 className="mx-3 my-8 whitespace-pre-line text-14 text-white-500 dark:text-white-800 md:mx-[20%] md:my-[5%] md:text-20">
         {desc.map((text, index) => (
           <p key={index} className="mb-4 md:mb-5 ">
             {text}

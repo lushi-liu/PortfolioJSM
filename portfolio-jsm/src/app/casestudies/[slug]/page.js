@@ -22,6 +22,7 @@ export default function Page({ params }) {
         myRole={data[params.slug].myRole}
         start={data[params.slug].start}
         end={data[params.slug].end}
+        techStack={data[params.slug].techStack}
       />
       <ProjectDesc
         desc={data[params.slug].desc}
