@@ -16,24 +16,24 @@ const FeaturedProjects = () => {
           <ProjectCard
             bgcolor="bg-[#416CEA]"
             title="Morrent - A Car Rental Application"
-            lImage="./job-image/Morrent-Laptop.svg"
-            mImage="./job-image/Morrent-Mobile.svg"
+            lImage="/job-image/Morrent-Laptop.svg"
+            mImage="/job-image/Morrent-Mobile.svg"
             link="morrent"
             leftSide={false}
           />
           <ProjectCard
             bgcolor="bg-[#0BAB7C]"
             title="JobIT - A Job Finding Application"
-            lImage="./job-image/JobIT-Laptop.svg"
-            mImage="./job-image/JobIT-Mobile.svg"
+            lImage="/job-image/JobIT-Laptop.svg"
+            mImage="/job-image/JobIT-Mobile.svg"
             link="jobit"
             leftSide={true}
           />
           <ProjectCard
             bgcolor="bg-[#FF6934]"
-            title="Morrent - A Car Rental Application"
-            lImage="./job-image/Morrent-Laptop.svg"
-            mImage="./job-image/Morrent-Mobile.svg"
+            title="Hipnode - A Social Media Application"
+            lImage="/job-image/Hipnode-Laptop.png"
+            mImage="/job-image/Hipnode-Mobile.png"
             link="morrent"
             leftSide={false}
           />

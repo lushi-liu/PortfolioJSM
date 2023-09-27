@@ -3,7 +3,7 @@ import GetInTouch from "@/src/components/GetInTouch";
 
 export default function Casestudies() {
   return (
-    <main className="flex min-h-screen flex-col items-center text-center dark:text-white-800 md:p-24">
+    <main className="flex min-h-screen flex-col items-center text-center text-black dark:text-white-800 md:p-24">
       <h1 className="mt-8 text-[42px] font-extrabold dark:text-white-900 md:mt-[45px] md:text-64">
         Recent <span className="magicHighlight">Case </span>
         <span className="magicHighlight">Studies</span>
@@ -18,30 +18,30 @@ export default function Casestudies() {
             bgcolor="bg-blue-dark"
             title="Morrent"
             desc="Car Rental Application"
-            image="./job-image/Morrent-Laptop.svg"
+            image="/job-image/Morrent-Laptop.svg"
             link="morrent"
           />
           <CaseCard
             bgcolor="bg-[#0BAB7C]"
             title="JobIt"
             desc="Job Finding Application"
-            image="./job-image/JobIT-Laptop.svg"
+            image="/job-image/JobIT-Laptop.svg"
             link="jobit"
           />
         </li>
         <li className="flex flex-col gap-4 md:flex-row">
           <CaseCard
-            bgcolor="bg-blue-dark"
-            title="Morrent"
-            desc="Car Rental Application"
-            image="./job-image/Morrent-Laptop.svg"
+            bgcolor="bg-[#FF6934]"
+            title="HipNode"
+            desc="Social Platform for Developers"
+            image="/job-image/Hipnode-Laptop.png"
             link="morrent"
           />
           <CaseCard
             bgcolor="bg-blue-dark"
             title="Morrent"
             desc="Car Rental Application"
-            image="./job-image/Morrent-Laptop.svg"
+            image="/job-image/Morrent-Laptop.svg"
             link="morrent"
           />
         </li>

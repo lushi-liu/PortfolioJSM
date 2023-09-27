@@ -12,7 +12,7 @@ const Education = () => {
             An overview of my educational background
           </h3>
         </div>
-        <div className="ml-16">STUFF</div>
+        <div className="ml-16">Education: University of Toronto</div>
       </div>
     </main>
   );

@@ -2,7 +2,7 @@ import ContactForm from "@/src/components/Contact";
 
 export default function Contact() {
   return (
-    <main className="flex min-h-screen flex-col items-center dark:text-white-800">
+    <main className="flex min-h-screen flex-col items-center text-black dark:text-white-800">
       <h1 className="magicHighlight mt-8 text-[38px] font-bold dark:text-white-900 md:mt-[45px] md:text-64">
         Get in Touch
       </h1>

@@ -33,7 +33,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
-    "framer-motion": "^10.16.2",
+    "framer-motion": "^10.16.4",
     "iconsax-react": "^0.0.8",
     "jsonwebtoken": "^9.0.1",
     "lucide-react": "^0.268.0",

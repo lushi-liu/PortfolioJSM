@@ -9,7 +9,7 @@ import ProjectTitle from "@/src/components/ProjectTitle";
 
 export default function Page({ params }) {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between py-6 dark:text-white-800">
+    <main className="flex min-h-screen flex-col items-center justify-between py-6 text-black dark:text-white-800">
       <ProjectTitle
         title={data[params.slug].title}
         titleDesc={data[params.slug].titleDesc}
