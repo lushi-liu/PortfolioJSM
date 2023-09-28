@@ -5,6 +5,7 @@ import Button from "./Button";
 import { useMediaQuery } from "react-responsive";
 import { Copy } from "iconsax-react";
 import Link from "next/link";
+import HeroImage from "./HeroImage";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
@@ -14,11 +15,10 @@ const Hero = () => {
       .writeText("lushiliu1@gmail.com")
       .then(() => {
         console.log("Text copied to clipboard");
-        // You can add any additional logic or feedback here
       })
       .catch((err) => {
         console.error("Failed to copy text: ", err);
-        // Handle any errors here
+        throw err;
       });
   };
   return (
@@ -29,7 +29,7 @@ const Hero = () => {
             HI, I AM LOUIS
           </h3>
           <h1 className="mt-8 text-[38px] font-bold dark:text-white-900 md:mt-[45px] md:text-64">
-            Professional <span className="magicHighlight">Web</span>{" "}
+            Professional <span className="magicHighlight">Web </span>
             <span className="magicHighlight">Developer</span> based in Canada
           </h1>
           <h3 className="mt-[10px] text-[12px] text-white-500 dark:text-white-800 md:text-18">
@@ -69,13 +69,14 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="mt-8 flex flex-col items-center md:mx-32 md:mt-16">
-          <Image
+        <div className="mt-8 flex h-[262px] w-[393px] flex-col items-center md:mx-16 md:mt-16 md:h-[50%] md:w-[40%]">
+          {/* <Image
             src="./hero-image.svg"
             alt=""
             width={isMobile ? 393 : 978}
             height={isMobile ? 262 : 595}
-          />
+          /> */}
+          <HeroImage />
         </div>
       </div>
     </div>

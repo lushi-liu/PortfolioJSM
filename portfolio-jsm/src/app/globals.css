@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -26,6 +30,36 @@
     left: 0;
     right: 0;
     bottom: 0;
+  }
+}
+
+@keyframes bounce-smaller {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px); /* Adjust the bounce height */
+  }
+}
+
+@keyframes bounce-left {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(7px); /* Adjust the bounce height */
+  }
+}
+
+@keyframes bounce-right {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-7px); /* Adjust the bounce height */
   }
 }
 

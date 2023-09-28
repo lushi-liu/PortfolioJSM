@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 const Skills = () => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
   const iS = isMobile ? 25 : 50; // icon size
-  // const iS = 50;
+
   return (
     <main className="mt-8 w-full bg-white-900 dark:bg-black-200 md:mt-16">
       <div className="flex w-full flex-col items-center text-black-400 md:h-[100%] md:w-[100%]">
@@ -24,6 +24,9 @@ const Skills = () => {
             <div className="mr-3 rounded-full bg-white-800 p-5 dark:bg-black-300 md:mr-8">
               <Image src="./nextjs.svg" alt="" width={iS} height={iS} />
             </div>
+            <div className="mr-3 rounded-full bg-white-800 p-5 dark:bg-black-300 md:mr-8">
+              <Image src="./redux.svg" alt="" width={iS} height={iS} />
+            </div>
           </div>
           <div className="mt-4 flex flex-row md:mt-10">
             <div className="mr-3 rounded-full bg-white-800 p-5 dark:bg-black-300 md:mr-8">
@@ -34,6 +37,9 @@ const Skills = () => {
             </div>
             <div className="mr-3 rounded-full bg-white-800 p-5 dark:bg-black-300 md:mr-8">
               <Image src="./nodejs.svg" alt="" width={iS} height={iS} />
+            </div>
+            <div className="mr-3 rounded-full bg-white-800 p-5 dark:bg-black-300 md:mr-8">
+              <Image src="./mui.svg" alt="" width={iS} height={iS} />
             </div>
           </div>
         </div>
@@ -46,7 +52,10 @@ const Skills = () => {
               <Image src="./tailwind.svg" alt="" width={iS} height={iS} />
             </div>
             <div className="mr-3 rounded-full bg-white-800 p-5 dark:bg-black-300 md:mr-8">
-              <Image src="./nextjs.svg" alt="" width={iS} height={iS} />
+              <Image src="./git.svg" alt="" width={iS} height={iS} />
+            </div>
+            <div className="mr-3 rounded-full bg-white-800 p-5 dark:bg-black-300 md:mr-8">
+              <Image src="./github.svg" alt="" width={iS} height={iS} />
             </div>
           </div>
           <div className="mt-4 flex flex-row md:mt-10">
@@ -55,6 +64,12 @@ const Skills = () => {
             </div>
             <div className="mr-3 rounded-full bg-white-800 p-5 dark:bg-black-300 md:mr-8">
               <Image src="./css.svg" alt="" width={iS} height={iS} />
+            </div>
+            <div className="mr-3 rounded-full bg-white-800 p-5 dark:bg-black-300 md:mr-8">
+              <Image src="./surface1.svg" alt="" width={iS} height={iS} />
+            </div>
+            <div className="mr-3 rounded-full bg-white-800 p-5 dark:bg-black-300 md:mr-8">
+              <Image src="./sass.svg" alt="" width={iS} height={iS} />
             </div>
           </div>
         </div>

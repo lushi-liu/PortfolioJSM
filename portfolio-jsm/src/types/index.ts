@@ -54,3 +54,42 @@ export interface ReviewProps {
   desc: string;
   image: string;
 }
+
+export interface ProjectTitleProps {
+  title: string;
+  titleDesc: string;
+  lImage: string;
+  mImage: string;
+  demo: string;
+  code: string;
+}
+
+export interface ProjectDescProps {
+  desc: string[];
+  problem: string;
+  image: string;
+  figma: string;
+}
+
+export interface ProjectProblemProps {
+  challenge: string[];
+  learning: string[];
+}
+
+export interface ProjectRoleProps {
+  myRole: string;
+  start: string;
+  end: string;
+  techStack: string[];
+}
+
+export interface ProjectOtherProps {
+  image1: string;
+  title1: string;
+  desc1: string;
+  link1: string;
+  image2: string;
+  title2: string;
+  desc2: string;
+  link2: string;
+}

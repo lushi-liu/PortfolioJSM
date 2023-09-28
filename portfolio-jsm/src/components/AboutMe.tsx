@@ -25,30 +25,30 @@ const AboutMe = () => {
           </div>
           {currCard === 1 ? (
             <ReviewCard
-              image="./sun.svg"
-              name="Louis Liu"
+              image="/review-image/Adrian.png"
+              name="Adrian Hajdin"
               title="Founder & CEO at JS Mastery"
-              desc="I have had the pleasure of working with Adrian as a Software Developer and can confidently 
+              desc="I have had the pleasure of working with Lushi as a Software Developer and can confidently 
           say that he is a valuable asset to any team. He is highly skilled in ReactJS, NextJS, Javascript, 
           Material UI, Tailwind CSS, Redux, and GitHub, and consistently delivers high-quality code. "
             />
           ) : currCard === 2 ? (
             <ReviewCard
-              image="./moon.svg"
-              name="Louis Liu"
+              image="/review-image/Brandon.jpg"
+              name="Brandon Etter"
               title="Founder & CEO at JS Mastery"
-              desc="I have had the pleasure of working with Adrian as a Software Developer and can confidently 
-        say that he is a valuable asset to any team. He is highly skilled in ReactJS, NextJS, Javascript, 
-        Material UI, Tailwind CSS, Redux, and GitHub, and consistently delivers high-quality code. "
+              desc="I had the pleasure of working with Louis on various projects and was consistently impressed by his self-sufficiency 
+              and high-quality work. He excelled in creating clean code, well-designed components, and user-friendly 
+              interfaces. Would gladly work with him again!"
             />
           ) : (
             <ReviewCard
-              image="./react.svg"
-              name="Louis Liu"
+              image="/review-image/Christopher.jpg"
+              name="Christopher Soltis"
               title="Founder & CEO at JS Mastery"
-              desc="I have had the pleasure of working with Adrian as a Software Developer and can confidently 
-      say that he is a valuable asset to any team. He is highly skilled in ReactJS, NextJS, Javascript, 
-      Material UI, Tailwind CSS, Redux, and GitHub, and consistently delivers high-quality code. "
+              desc="Working alongside Louis on multiple projects was truly a pleasure. I was consistently impressed by his
+              knack for delivering top-notch work. His ability to create clean, readable code and design exceptional components 
+              and user interfaces sets him apart. I would gladly collaborate with him again."
             />
           )}
 

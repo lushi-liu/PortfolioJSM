@@ -53,7 +53,7 @@ const NavBar = () => {
           <Link href="/">
             <div className="flex flex-row">
               <Image
-                src={theme === "dark" ? "./downloaddark.svg" : "./download.svg"}
+                src={theme === "dark" ? "/downloaddark.svg" : "/download.svg"}
                 alt=""
                 width={20}
                 height={20}
@@ -65,7 +65,7 @@ const NavBar = () => {
         <div className="mr-12 dark:text-white-800">|</div>
         <button onClick={toggleTheme} className="mr-12">
           <Image
-            src={theme === "dark" ? "./moon.svg" : "./sun.svg"}
+            src={theme === "dark" ? "/moon.svg" : "/sun.svg"}
             alt=""
             width={20}
             height={20}
@@ -76,7 +76,7 @@ const NavBar = () => {
       <div className="mt-5 flex flex-row md:hidden">
         <button onClick={toggleTheme} className="mr-4">
           <Image
-            src={theme === "dark" ? "./moon.svg" : "./sun.svg"}
+            src={theme === "dark" ? "/moon.svg" : "/sun.svg"}
             alt=""
             width={20}
             height={20}
@@ -84,7 +84,7 @@ const NavBar = () => {
         </button>
         <div onClick={toggleMenu}>
           <Image
-            src={theme === "dark" ? "./menu-dark.svg" : "./menu-light.svg"}
+            src={theme === "dark" ? "/menu-dark.svg" : "/menu-light.svg"}
             alt=""
             width={24}
             height={24}
@@ -133,9 +133,7 @@ const NavBar = () => {
             <button className="mx-[35%] text-14 font-semibold text-black-200 dark:text-white-800">
               <div className="flex flex-row">
                 <Image
-                  src={
-                    theme === "dark" ? "./downloaddark.svg" : "./download.svg"
-                  }
+                  src={theme === "dark" ? "/downloaddark.svg" : "/download.svg"}
                   alt=""
                   width={20}
                   height={20}
