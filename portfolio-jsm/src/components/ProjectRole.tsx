@@ -1,7 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
-import { useMediaQuery } from "react-responsive";
 import { ProjectRoleProps } from "../types";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
@@ -14,7 +13,7 @@ const ProjectRole = ({ myRole, start, end, techStack }: ProjectRoleProps) => {
     }
     return rows;
   };
-  const isMobile = useMediaQuery({ maxWidth: 1024 });
+
   return (
     <main className="mt-4 w-full bg-white-900 dark:bg-black-200 md:mt-6">
       <ul className="ml-4 flex flex-col md:ml-0 md:flex-row md:items-center md:justify-between">
@@ -75,7 +74,7 @@ const ProjectRole = ({ myRole, start, end, techStack }: ProjectRoleProps) => {
         <div className="flex flex-col md:hidden">
           {splitArrayIntoRows(techStack, 5).map((row, rowIndex) => (
             <ul key={rowIndex} className="mb-3 flex flex-row">
-              {row.map(
+              {(row as string[]).map(
                 (
                   icon: string | StaticImport,
                   index: React.Key | null | undefined
