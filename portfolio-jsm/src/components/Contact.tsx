@@ -5,13 +5,28 @@ import Input from "./Input";
 import { useMediaQuery } from "react-responsive";
 import { Linkedin, Github, Email, Phone } from "./Icons";
 
+interface FormType {
+  user_name?: {
+    value: string;
+  };
+  user_email?: {
+    value: string;
+  };
+  message?: {
+    value: string;
+  };
+  method?: {
+    value: string;
+  };
+}
+
 const ContactForm = () => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
 
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [error, setError] = useState("");
 
-  const form = useRef();
+  const form: React.RefObject<FormType | null> = useRef(null)
 
   const sendEmail = (e: { preventDefault: () => void }) => {
     e.preventDefault();
@@ -20,11 +35,11 @@ const ContactForm = () => {
     setFormSubmitted(true);
 
     if (
-      !form.current.user_name.value ||
-      !form.current.user_email.value ||
-      !form.current.message.value ||
-      !form.current.method.value
-    ) {
+      !form.current!.user_name?.value ||
+      !form.current!.user_email?.value ||
+      !form.current!.message?.value ||
+      !form.current!.method?.value
+    ){
       setError("Please fill in all fields.");
       return;
     }
