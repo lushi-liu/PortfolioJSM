@@ -8,7 +8,7 @@ import Link from "next/link";
 const FeaturedProjects = () => {
   return (
     <div>
-      <div className="flex flex-col items-center md:mt-12">
+      <div className="mt-12 flex flex-col items-center ">
         <h1 className="text-[36px] font-extrabold md:mt-12 md:text-48">
           Featured <span className="magicHighlight">Projects</span>
         </h1>

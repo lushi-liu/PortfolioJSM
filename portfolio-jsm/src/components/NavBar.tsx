@@ -10,8 +10,16 @@ const NavBar = () => {
   const pathname = usePathname();
   const { theme, toggleTheme } = useThemeState();
   const [expanded, setExpanded] = useState(false);
+
   const toggleMenu = () => {
     setExpanded(!expanded);
+  };
+
+  const handleDownload = () => {
+    const anchor = document.createElement("a");
+    anchor.href = "/resume.pdf";
+    anchor.download = "resume.pdf";
+    anchor.click();
   };
 
   return (
@@ -50,17 +58,15 @@ const NavBar = () => {
         </button>
 
         <button className="mr-12 text-14 font-semibold text-black-200 dark:text-white-800">
-          <Link href="/">
-            <div className="flex flex-row">
-              <Image
-                src={theme === "dark" ? "/downloaddark.svg" : "/download.svg"}
-                alt=""
-                width={20}
-                height={20}
-              />
-              <span className="ml-2">Resume</span>
-            </div>
-          </Link>
+          <div className="flex flex-row" onClick={handleDownload}>
+            <Image
+              src={theme === "dark" ? "/downloaddark.svg" : "/download.svg"}
+              alt=""
+              width={20}
+              height={20}
+            />
+            <span className="ml-2">Resume</span>
+          </div>
         </button>
         <div className="mr-12 dark:text-white-800">|</div>
         <button onClick={toggleTheme} className="mr-12">

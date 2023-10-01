@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import Button from "./Button";
 import { useMediaQuery } from "react-responsive";
 import { Copy } from "iconsax-react";
@@ -70,12 +69,6 @@ const Hero = () => {
           </div>
         </div>
         <div className="mt-8 flex h-[262px] w-[393px] flex-col items-center md:mx-16 md:mt-16 md:h-[50%] md:w-[40%]">
-          {/* <Image
-            src="./hero-image.svg"
-            alt=""
-            width={isMobile ? 393 : 978}
-            height={isMobile ? 262 : 595}
-          /> */}
           <HeroImage />
         </div>
       </div>
