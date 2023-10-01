@@ -79,7 +79,6 @@ export const data = {
       "/color-icon/git.svg",
       "/color-icon/github.svg",
       "/color-icon/nodejs.svg",
-      // "/color-icon/ex.svg",
       "/color-icon/mongodb.svg",
     ],
     desc: [
