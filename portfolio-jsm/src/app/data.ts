@@ -58,7 +58,7 @@ export const data = {
 
   jobit: {
     title: "JobIT",
-    titleDesc: "A Job Finding Website",
+    titleDesc: "A Jobs Finding Website",
     lImage: "/job-image/JobIT-Laptop.svg",
     mImage: "/job-image/JobIT-Mobile.svg",
     demo: "https://cohort5-breaking-bugs-car-rent.vercel.app/",
