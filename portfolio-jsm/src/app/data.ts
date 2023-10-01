@@ -7,8 +7,8 @@ export const data = {
     demo: "https://cohort5-breaking-bugs-car-rent.vercel.app/",
     code: "https://github.com/JavaScript-Mastery-PRO/Cohort5_BreakingBugs_CarRent",
     myRole: "Software Engineer",
-    start: "24/01/2023",
-    end: "02/03/2023",
+    start: "08/07/2023",
+    end: "09/03/2023",
     techStack: [
       "/color-icon/react.svg",
       "/color-icon/redux.svg",
@@ -56,6 +56,7 @@ export const data = {
       "Jobit, a web app made with React and JSearch API, links developers to millions of job openings. It offers easy job search by...",
     link2: "/casestudies/jobit",
   },
+
   jobit: {
     title: "JobIT",
     titleDesc: "A Car Rental Website",
@@ -64,8 +65,8 @@ export const data = {
     demo: "https://cohort5-breaking-bugs-car-rent.vercel.app/",
     code: "https://github.com/JavaScript-Mastery-PRO/Cohort5_BreakingBugs_CarRent",
     myRole: "Software Engineer",
-    start: "12321312",
-    end: "asdsaddsa",
+    start: "07/10/2023",
+    end: "08/06/2023",
     techStack: [
       "/color-icon/react.svg",
       "/color-icon/redux.svg",
