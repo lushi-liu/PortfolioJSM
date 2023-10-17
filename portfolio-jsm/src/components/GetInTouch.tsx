@@ -6,7 +6,7 @@ import { ArrowRight } from "iconsax-react";
 import Link from "next/link";
 
 const GetInTouch = () => {
-  const isMobile = useMediaQuery({ maxWidth: 1024 });
+  const isMobile = useMediaQuery({ maxWidth: 1440 });
   return (
     <main className="mt-10 h-[311px] w-[90%] items-center rounded-[10px] bg-yellow-primary text-center md:h-[330px]">
       <div className="flex flex-col justify-between md:flex-row">

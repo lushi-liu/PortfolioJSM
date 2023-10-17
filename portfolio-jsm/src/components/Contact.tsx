@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import { Linkedin, Github, Email, Phone } from "./Icons";
 
 const ContactForm = () => {
-  const isMobile = useMediaQuery({ maxWidth: 1024 });
+  const isMobile = useMediaQuery({ maxWidth: 1140 });
 
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [error, setError] = useState("");
@@ -23,31 +23,31 @@ const ContactForm = () => {
       !form.current!.user_name?.value ||
       !form.current!.user_email?.value ||
       !form.current!.message?.value
-    ){
+    ) {
       setError("Please fill in all fields.");
       return;
     }
 
     const formElement = form.current;
 
-if (formElement && formElement instanceof HTMLFormElement) {
-  // If formElement is not null and is an HTMLFormElement
-  emailjs
-    .sendForm(
-      process.env.NEXT_PUBLIC_SERVICE_ID || 'default-value',
-      "contact_form",
-      formElement,
-      process.env.NEXT_PUBLIC_PUBLIC_KEY || 'default-value'
-    )
-    .then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
-}
+    if (formElement && formElement instanceof HTMLFormElement) {
+      // If formElement is not null and is an HTMLFormElement
+      emailjs
+        .sendForm(
+          process.env.NEXT_PUBLIC_SERVICE_ID || "default-value",
+          "contact_form",
+          formElement,
+          process.env.NEXT_PUBLIC_PUBLIC_KEY || "default-value"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
 
   return (
