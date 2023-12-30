@@ -36,14 +36,16 @@ const ProjectDesc = ({ desc, problem, image, figma }: ProjectDescProps) => {
           </div>
         </div>
       </div>
-      <div className="bg-blue-light p-0 dark:bg-blue-dark">
-        <h2 className="my-4 text-center text-14 text-white-900 md:my-8 md:text-32">
-          HIGH-FIDELITY FIGMA DESIGN
-        </h2>
-        <div className="relative mx-auto h-[250px] w-screen md:h-[100vh]">
-          <Image src={figma} alt="test" layout="fill" objectFit="cover" />
+      {figma !== "none" && (
+        <div className="bg-blue-light p-0 dark:bg-blue-dark">
+          <h2 className="my-4 text-center text-14 text-white-900 md:my-8 md:text-32">
+            HIGH-FIDELITY FIGMA DESIGN
+          </h2>
+          <div className="relative mx-auto h-[250px] w-screen md:h-[100vh]">
+            <Image src={figma} alt="test" layout="fill" objectFit="cover" />
+          </div>
         </div>
-      </div>
+      )}
     </main>
   );
 };

@@ -35,14 +35,14 @@ export default function Casestudies() {
             title="HipNode"
             desc="Social Platform for Developers"
             image="/job-image/Hipnode-Laptop.png"
-            link="morrent"
+            link="hipnode"
           />
           <CaseCard
-            bgcolor="bg-blue-dark"
-            title="Morrent"
-            desc="Car Rental Application"
-            image="/job-image/Morrent-Laptop.svg"
-            link="morrent"
+            bgcolor="bg-[#4B0080]"
+            title="MindLikes"
+            desc="Developer Forum"
+            image="/job-image/MindLikes-Laptop.png"
+            link="mindlikes"
           />
         </li>
       </ul>

@@ -42,7 +42,7 @@ const ProjectOther = ({
             <h3 className="text-20 font-semibold text-blue-light dark:text-blue-dark md:text-[24px] ">
               {title1}
             </h3>
-            <p className="mb-4 text-14 text-white-500 dark:text-white-800 md:mb-8 md:text-18">
+            <p className="mb-4 line-clamp-3 text-14 text-white-500 dark:text-white-800 md:mb-8 md:text-18">
               {desc1}
             </p>
             <Link href={link1}>
@@ -72,7 +72,7 @@ const ProjectOther = ({
             <h3 className="text-20 font-semibold text-blue-light dark:text-blue-dark md:text-[24px] ">
               {title2}
             </h3>
-            <p className="mb-4 text-14 text-white-500 dark:text-white-800 md:mb-8 md:text-18">
+            <p className="mb-4 line-clamp-3 text-14 text-white-500 dark:text-white-800 md:mb-8 md:text-18">
               {desc2}
             </p>
             <Link href={link2}>

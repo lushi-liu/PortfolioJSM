@@ -22,11 +22,11 @@ const FeaturedProjects = () => {
             leftSide={false}
           />
           <ProjectCard
-            bgcolor="bg-[#0BAB7C]"
-            title="JobIT - A Job Finding Application"
-            lImage="/job-image/JobIT-Laptop.svg"
-            mImage="/job-image/JobIT-Mobile.svg"
-            link="jobit"
+            bgcolor="bg-[#4B0080]"
+            title="MindLikes - A Developer Forum"
+            lImage="/job-image/MindLikes-Laptop.png"
+            mImage="/job-image/MindLikes-Mobile.png"
+            link="mindlikes"
             leftSide={true}
           />
           <ProjectCard
