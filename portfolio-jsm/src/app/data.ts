@@ -173,8 +173,8 @@ export const data = {
   hipnode: {
     title: "HipNode",
     titleDesc: "A Social Media Platform",
-    lImage: "/job-image/HipNode-Laptop.png",
-    mImage: "/job-image/HipNode-Mobile.png",
+    lImage: "/job-image/Hipnode-Laptop.png",
+    mImage: "/job-image/Hipnode-Mobile.png",
     demo: "https://hipnode-xk0v.onrender.com",
     code: "https://github.com/JSM-Masterclass-Experience/Cohort5_BreakingBugs_Hipnode",
     myRole: "Software Engineer",
