@@ -17,8 +17,8 @@ const NavBar = () => {
 
   const handleDownload = () => {
     const anchor = document.createElement("a");
-    anchor.href = "/resume.pdf";
-    anchor.download = "resume.pdf";
+    anchor.href = "/resumelushiliu.pdf";
+    anchor.download = "resumelushiliu.pdf";
     anchor.click();
   };
 
