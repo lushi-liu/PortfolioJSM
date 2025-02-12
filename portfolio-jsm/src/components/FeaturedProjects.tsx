@@ -34,7 +34,7 @@ const FeaturedProjects = () => {
             title="Hipnode - A Social Media Application"
             lImage="/job-image/Hipnode-Laptop.png"
             mImage="/job-image/Hipnode-Mobile.png"
-            link="morrent"
+            link="hipnode"
             leftSide={false}
           />
         </div>

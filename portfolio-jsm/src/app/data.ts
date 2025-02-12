@@ -175,7 +175,7 @@ export const data = {
     titleDesc: "A Social Media Platform",
     lImage: "/job-image/Hipnode-Laptop.png",
     mImage: "/job-image/Hipnode-Mobile.png",
-    demo: "https://hipnode-xk0v.onrender.com",
+    demo: "https://cohort5-breakingbugs-hipnode.onrender.com",
     code: "https://github.com/JSM-Masterclass-Experience/Cohort5_BreakingBugs_Hipnode",
     myRole: "Software Engineer",
     start: "10/02/2023",
