@@ -8,7 +8,7 @@ import Skills from "../components/Skills";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between py-6 text-black dark:text-white-800">
+    <main className="dark:text-white-800 flex min-h-screen flex-col items-center justify-between py-6 text-black">
       <Hero />
       <Skills />
       <Service />
