@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="mx-[5%] mt-12 flex flex-col items-center md:ml-16 md:mt-16 md:flex-row">
         <div className=" flex flex-col ">
           <h3 className=" text-14 font-semibold tracking-[5px] text-blue-light dark:text-blue-dark md:text-20">
-            HI, I AM LOUIS
+            HI, I AM LUSHI
           </h3>
           <h1 className="mt-8 text-[38px] font-bold dark:text-white-900 md:mt-[45px] md:text-64">
             Professional <span className="magicHighlight">Web </span>
