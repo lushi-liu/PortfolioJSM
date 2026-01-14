@@ -29,7 +29,8 @@ const Hero = () => {
           </h3>
           <h1 className="mt-8 text-[38px] font-bold dark:text-white-900 md:mt-[45px] md:text-64">
             Professional <span className="magicHighlight">Web </span>
-            <span className="magicHighlight">Developer</span> based in Canada
+            <span className="magicHighlight">Developer</span> based in Tokyo,
+            Japan
           </h1>
           <h3 className="mt-[10px] text-[12px] text-white-500 dark:text-white-800 md:text-18">
             Transforming the web one line of code at a time: Crafting
